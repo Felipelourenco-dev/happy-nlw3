@@ -1,0 +1,35 @@
+/* aside */
+
+aside.sidebar{
+    position: fixed;
+    height: 100%;
+    padding: 32px 24px/*3.2rem 2.4rem*/;
+    background: linear-gradient(329.54deg, #475f94 0%, #8f8ce7ab 100%) no-repeat;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  aside.sidebar footer button{
+    width: 58px;
+    height: 58px;
+    border: none;
+    background: #882587;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    transition: background-color 0.2s;
+  }
+  aside.sidebar footer button:hover{
+    background: #925376;
+  }
+  
+  .with-sidebar{
+    padding-left: 110px;
+  }

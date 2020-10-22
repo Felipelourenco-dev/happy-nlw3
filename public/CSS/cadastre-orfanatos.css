@@ -1,0 +1,131 @@
+#pagina-orfanatos {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+
+.orfanatos-detalhes {
+    width: 70rem;
+    margin: 6.4rem auto;
+    background: white;
+    border: 1px outset #825f87;
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+
+.orfanatos-detalhes > img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.imagens {
+    display: grid;
+    grid-template-columns:  repeat(6, 1fr);
+    column-gap: 1.6rem;
+    margin: 16px 40px 0;
+
+}
+
+
+
+.imagens button {
+    border: 0;
+    background: none;
+    height: 8.8rem;
+    cursor: pointer;
+    border-radius: 2rem;
+
+    overflow: hidden;
+
+    opacity: 0.6;
+
+    transition: opacity 200ms;
+}
+
+.imagens button:hover {
+    opacity: 1;
+}
+
+.imagens button.imagens button.active {
+    opacity: 1;
+}
+
+.imagens button img {
+    width: 100%;
+    height: 8.8rem;
+    object-fit: cover;
+}
+
+.orfanato-detalhes-content {
+    padding: 8rem;
+}
+
+.orfanato-detalhes-content h1 {
+    color: #825f87;
+    font-size: 5.4rem;
+    line-height: 1;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.orfanato-detalhes-content h2, h3 {
+    color: #825f87;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.orfanato-detalhes-content p {
+    line-height: 1.8;
+    color: #825f87;
+    margin-top: 2.4rem;
+}
+
+.orfanato-detalhes-content hr {
+    width: 100%;
+    height: 1px;
+    border: 0px;
+    background: #882587;
+    margin: 6.4rem;
+    
+
+}
+
+main {
+    flex: 1;
+}
+
+
+
+
+.orfanato-detalhes-content hr {
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background: #825f87;
+    margin: 6.4rem 0;
+}
+
+.funcionamento {
+    margin-top: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.horarios,
+ .dias-abertos {
+    color: #825f87;
+    text-align: center;
+    line-height: 1.1;
+
+}
+
+
+
+
