@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/cadastre-orfanatos.css" />
+    <link rel="stylesheet" href="./public/css/sidebar.css" />
+    <link rel="stylesheet" href="./public/css/map.css" />
+    <link rel="stylesheet" href="./public/css/buttons.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Informações Orfanatos</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <div id="pagina-orfanatos">
+      <aside class="animate-right sidebar">
+        <a href="index.html">
+          <img src="./public/images/map-marker.svg" alt="Happy">
+        </a>
+
+        <footer>
+          <button onclick="history.back()">
+            <img src="./public/images/arrow-back.svg" alt="Voltar" />
+            
+          </button>
+        </footer>
+      </aside>
+
+      <main class="animate-appear with-sidebar">
+        <div class="orfanatos-detalhes">
+          <img
+            src="./public/images/orfanato.jpeg"
+            alt="IMADEL - Instituto Maria de Lourdes
+              "
+          />
+          <div class="imagens">
+          <button onclick="selectImagens(event)" class="active" type="button">
+            <img
+              src="./public/images/orfanato1.jpg"
+              alt="IMADEL - Instituto Maria de Lourdes
+                "
+            />
+          </button>
+          <button onclick="selectImagens(event)" type="button">
+            <img
+              src="./public/images/logo.png"
+              alt="IMADEL - Instituto Maria de Lourdes
+                  "
+            />
+          </button>
+          <button onclick="selectImagens(event)"type="button">
+            <img
+              src="./public/images/home.jpg"
+              alt="IMADEL - Instituto Maria de Lourdes
+                    "
+            />
+          </button>
+          <button onclick="selectImagens(event)" type="button">
+            <img
+              src="./public/images/home.jpg"
+              alt="IMADEL - Instituto Maria de Lourdes
+                      "
+            />
+          </button>
+          <button onclick="selectImagens(event)" type="button">
+            <img
+              src="./public/images/home.jpg"
+              alt="IMADEL - Instituto Maria de Lourdes
+                      "
+            />
+          </button>
+          <button onclick="selectImagens(event)" type="button">
+            <img
+              src="./public/images/home.jpg"
+              alt="IMADEL - Instituto Maria de Lourdes
+                      "
+            />
+          </button>
+          </div>
+
+          <div class="orfanato-detalhes-content">
+            <h1>IMADEL</h1>
+            <h3>Instituto Maria de Lourdes</h3>
+
+            <p>
+              O Instituto Maria de Lourdes – IMADEL é uma associação civil sem
+              fins lucrativos que há mais de 30 anos abriga crianças, jovens e
+              famílias em comunidade rural no município de Guapimirim, no estado
+              do Rio de Janeiro. Nosso objetivo é construirmos juntos uma
+              sociedade com a qual sonhamos, menos desigual, mais justa, ética e
+              feliz.
+            </p>
+
+            <div class="mapa-container">
+              <div id="mapid"></div>
+              <footer>
+                <a href="">Ver rotas no Google Maps</a>
+              </footer>
+            </div>
+            <hr />
+
+
+            <h2>Instruções para visita</h2>
+
+            <p>Apadrinhe uma criança e faça a vida dela melhor</p>
+
+            <div class="funcionamento">
+              <div class="horarios">
+                <img src="./public/images/clock.svg" alt="Horarios" />
+                Horarios de visitas das 08:00 as 18:00hrs.
+              </div>
+              <div class="dias-abertos">
+                <img src="./public/images/info.svg" alt="Informação" />
+                Atendemos fim de semana
+              </div>
+            </div>
+
+            <button class="primeiro-button" type="button">
+              <img
+                src="./public/images/whatsapp.svg"
+                alt="Chamar no wathsapp"
+              />Entrar em contato
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./public/js/cadastre-orfanatos.js"></script>
+  </body>
+</html>

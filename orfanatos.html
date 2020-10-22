@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./public/images/logo-icon.png" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/pagina-orfanatos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Localize um Orfanato</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+    src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  </head>
+  <body>
+      <div id="pagina-orfanatos">
+        <aside class="animate-right">
+          <header>
+              <a href="./index.html" alt="Volte para Home"> <img src="./public/images/map-marker.svg" alt="Logo de happy"> </a>
+
+             <h1>Escolha um Orfanato no mapa</h1>
+      
+               <p>Muitas crianças estão esperando a sua visita :)</p>
+
+      </header>
+      <footer>
+        <strong>Magé</strong>
+        <p>Rio de Janeiro</p>
+      </footer>
+    </aside>
+
+    <div id="mapid" class="animate-appear">
+      
+    </div>
+    <a class="novo-orfanato" href="cadastre-orfanatos.html" alt="Cadastre um Orfanato"> 
+      <img src="./public/images/plus.svg"></a>
+     
+    </div>
+
+    <script src="./public/js/pagina-orfanatos.js"></script>
+  </body>
+</html>
